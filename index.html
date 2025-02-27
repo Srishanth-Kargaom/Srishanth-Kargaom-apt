@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Planned Trips</title>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(45deg, #3498db, #9b59b6, #f39c12);
+            background-size: 300% 300%;
+            animation: gradientMove 8s infinite alternate;
+            color: #fff;
+            text-align: center;
+        }
+
+        @keyframes gradientMove {
+            0% { background-position: 0% 50%; }
+            100% { background-position: 100% 50%; }
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 30px auto;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+        }
+
+        .description {
+            font-size: 1.1rem;
+            margin-bottom: 20px;
+            color: #ffd700;
+        }
+
+        .form-section input {
+            padding: 12px;
+            margin: 10px;
+            border-radius: 6px;
+            border: none;
+            width: 80%;
+            max-width: 300px;
+            font-size: 1rem;
+            text-align: center;
+        }
+
+        .btn {
+            background: #FFD700;
+            color: #333;
+            padding: 12px 20px;
+            border-radius: 6px;
+            font-size: 1rem;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+            border: none;
+        }
+
+        .btn:hover {
+            background: #ffa500;
+        }
+
+        .filters {
+            display: flex;
+            justify-content: space-around;
+            margin-top: 20px;
+            gap: 20px;
+        }
+
+        .filter-category {
+            background: rgba(255, 255, 255, 0.1);
+            padding: 15px;
+            border-radius: 10px;
+            text-align: center;
+            flex: 1;
+            transition: 0.3s;
+        }
+
+        .filter-category:hover {
+            transform: scale(1.05);
+            background: rgba(255, 255, 255, 0.2);
+        }
+
+        .filter-category h3 {
+            color: #FFD700;
+            text-transform: uppercase;
+        }
+
+        .filter-category ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .apt-railway a {
+            color: #FFD700;
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .apt-railway a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h1>🚀 AI Planned Trips</h1>
+        <p class="description">APT provides users with optimized event-based travel plans from their exact location to their exact destination, incorporating all means of transport.</p>
+        
+        <div class="form-section">
+            <input type="text" placeholder="📍 From">
+            <input type="text" placeholder="🏁 To">
+            <input type="date">
+            <input type="date">
+            <input type="text" placeholder="🎟️ Enter Event (Optional)">
+            <br>
+            <button class="btn">🔍 Find Best Plan</button>
+        </div>
+
+        <div class="filters">
+            <div class="filter-category">
+                <h3><i data-lucide="bus"></i> Economy</h3>
+                <ul>
+                    <li><i data-lucide="bus"></i> Buses</li>
+                    <li><i data-lucide="bike"></i> Bike Taxis</li>
+                    <li><i data-lucide="car"></i> Cabs</li>
+                    <li><i data-lucide="train"></i> Trains</li>
+                </ul>
+            </div>
+
+            <div class="filter-category">
+                <h3><i data-lucide="car"></i> Standard</h3>
+                <ul>
+                    <li><i data-lucide="bus"></i> Buses</li>
+                    <li><i data-lucide="train"></i> Trains</li>
+                    <li><i data-lucide="car"></i> Cabs</li>
+                    <li><i data-lucide="plane"></i> Flights</li>
+                </ul>
+            </div>
+
+            <div class="filter-category">
+                <h3><i data-lucide="plane"></i> Premium</h3>
+                <ul>
+                    <li><i data-lucide="car"></i> Luxury Cabs</li>
+                    <li><i data-lucide="train"></i> Premium Trains</li>
+                    <li><i data-lucide="plane"></i> Flights</li>
+                    <li><i data-lucide="hotel"></i> 5-Star Hotels</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="apt-railway">check->
+            APT Railway 🚆 (Optimal train ticket booking)(a subsidary of APT)
+            <br>
+            <a href="railway.html" target="_blank">Explore APT Railway</a>
+        </div>
+    </div>
+
+    <script>
+        lucide.createIcons();
+    </script>
+</body>
+</html>
