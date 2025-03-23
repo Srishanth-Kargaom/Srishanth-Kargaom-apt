@@ -111,6 +111,16 @@
         .apt-railway a:hover {
             text-decoration: underline;
         }
+        .hand-emoji {
+            display: block;
+            font-size: 2rem;
+            animation: bounce 1s infinite alternate;
+        }
+        
+        @keyframes bounce {
+            0% { transform: translateY(0); }
+            100% { transform: translateY(8px); }
+        }
     </style>
 </head>
 <body>
@@ -161,10 +171,14 @@
             </div>
         </div>
 
-        <div class="apt-railway">check->
-            APT Railway 🚆 (Optimal train ticket booking)(a subsidary of APT)
+              <div class="apt-railway">
+            <p style="font-size: 1.2rem; font-weight: bold; color: #FFD700;">⬇️ Check this out! ⬇️</p>
+            <p>APT Railway 🚆 (Optimal train ticket booking) (a subsidiary of APT)</p>
+            
+            <span class="hand-emoji">👇</span>
             <br>
-            <a href="railway.html" target="_blank">Explore APT Railway</a>
+            <a href="railway.html" target="_blank">👉 Explore APT Railway</a>
+          
         </div>
     </div>
 
