@@ -23,3 +23,19 @@ distances between each station and lack of IRCTC's API access.
 Note: It is limited to train 20804 which used as a sample due lack of access to realtime irctc api's.It only geerates the list of possible
 outcomes according to optimal cost and it doesnt verify the availability of tickets with irctc servers.The user needs to check the
 availability by help by apt-railway
+Premium Tatkal Assistance:
+APT_Railway also aids users in Premium Tatkal booking:
+Premium Tatkal is available only between selected station pairs.
+Normal Tatkal users often miss out on confirmed tickets due to delays in manual booking (1+ minute), whereas counter bookings
+happen within 20–30 seconds.
+Railway counters do not book Premium Tatkal, so opting for it online gives you an edge.
+Note on Premium Tatkal:
+• The system generates a sorted list of optimal boarding and destination combinations, including those eligible for Premium Tatkal,
+ranked by cost efficiency.
+• Important: APT_Railway does not check real-time ticket availability for Premium Tatkal tickets. Users must verify actual ticket status on
+the official IRCTC website or authorized platforms before proceeding with booking.
+• Premium Tatkal bookings are typically limited to specific station pairs and are priced higher than normal Tatkal tickets. Since railway
+counters do not handle Premium Tatkal, online bookings can be highly competitive and often take longer (more than a minute), whereas
+counter bookings for normal Tatkal tickets occur much faster (within 20-30 seconds).
+• By suggesting the most cost-effective station pairs(boarding and destination) for Premium Tatkal, APT_Railway improves users’
+chances of securing a seat by guiding them where to book manually.
